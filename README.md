@@ -1,16 +1,46 @@
 # firebase_costs
 
-A new Flutter project.
+## Задача:
+Написать мини-приложение для ввода своих расходов с использованием Firebase Store и Firebase Auth. 
 
-## Getting Started
+При первом запуске приложения позвольте пользователю войти, используя для простоты Firebase Anonymous Authentication
 
-This project is a starting point for a Flutter application.
+После логина приложение показывает экран в котором:
+1. Пользователь может ввести свою трату и сохранить ее. 
+2. Трата вместе с текущим временем и датой отправляется а FireStore
+3. Отобразить список всех трат, отсортированных по дате (последняя введенная трата должна быть первой в списке)
 
-A few resources to get you started if this is your first Flutter project:
+Приложение должно обновлять лист трат в реальном режиме времени исходя из любых изменений в Firestore.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Бонусные задания:
+1. Редактирование существующих трат
+2. Удаление трат из списка
+3. Logout
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Плюсом будет использование Bloc, Cubit или GetX. Подразумевается работа приложения на iOS так и на Android. Для простоты можно использовать только портретный режим.
+
+## Использованные технологии:
+  - Dart/Flutter
+  - State managers: BloC, Cubit
+  - FirebaseAuth, Firebase Cloud Storage
+
+## Текущее состояние проекта
+### В проекте реализованы и работают следующие элементы
+  - Авторизация и регистрация
+  - Выход из личного кабинета
+  - Индивидуальная для каждого пользователя загрузка списка транзакций, отсортированных по дате
+  - Добавить транзакцию
+
+### Что можно улучшить или добавить
+  - Редактирование существующих трат
+  - Удаление трат из списка
+  - Сохранение авторизации
+
+## Превью 
+Авторизация:
+
+<img src="https://github.com/I4PUK/firebase_costs/assets/47809649/4e077f97-b91c-4647-9dbc-415b58ce6301" width="200" height="400" />
+
+Главный экран:
+
+<img src="https://github.com/I4PUK/firebase_costs/assets/47809649/a1eeaf91-3571-4445-aab6-50ce9d9d3bfd" width="200" height="400" />
