@@ -1,3 +1,4 @@
+import 'package:firebase_costs/core_ui/widgets/app_password_field.dart';
 import 'package:firebase_costs/features/auth/login/bloc/auth_bloc.dart';
 import 'package:firebase_costs/main.dart';
 import 'package:firebase_costs/repositories/auth/auth_repository.dart';
@@ -57,12 +58,10 @@ class _AuthScreenState extends State<AuthScreen> {
                       ),
                     ),
                     const SizedBox(height: 16.0),
-                    TextField(
+                    AppPasswordField(
                       controller: passwordTextFieldController,
-                      decoration: InputDecoration(
-                        hintText: 'Пароль',
-                        errorText: state.validationErrors['password'],
-                      ),
+                      hintText: 'Пароль',
+                      errorText: state.validationErrors['password'],
                     ),
                     const SizedBox(height: 32.0),
                     SizedBox(

@@ -1,5 +1,5 @@
-import 'package:firebase_costs/core/reg_exp_constants.dart';
-import 'package:firebase_costs/core/reg_exp_validator.dart';
+import 'package:firebase_costs/core/constants/reg_exp_constants.dart';
+import 'package:firebase_costs/core/validators/reg_exp_validator.dart';
 
 class AuthValidator {
   static Map<String, String> validateAuthScreen({

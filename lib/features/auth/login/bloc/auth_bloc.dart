@@ -1,4 +1,4 @@
-import 'package:firebase_costs/core/auth_validator.dart';
+import 'package:firebase_costs/core/validators/auth_validator.dart';
 import 'package:firebase_costs/main.dart';
 import 'package:firebase_costs/models/user_model.dart';
 import 'package:firebase_costs/navigation/app_router.dart';
